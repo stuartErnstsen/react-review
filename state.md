@@ -18,8 +18,8 @@ Discuss this question in pairs if you have a 4-person group
 import React, { Component } from "react";
 
 class LeadMentor extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       questionsAnswered: 0

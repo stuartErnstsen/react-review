@@ -3,16 +3,22 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is React?
+  - React is a javascript library that uses Component based architecture to structure single-page web applications. 
 
 2.  What is create-react-app?
+  - create-react-app is a package that is used to create a boiler plate React application folder. That folder is pre-structured and populated with the necessary dependencies/modules in order for the React application to run.
 
 3.  What is Component Based Architecture?
+  - Component Based Architecture is a process in which sections of our code are segmented and compartmentalized into smaller more manageable pieces, this facilitates navigation of our code and increases the efficiency of debugging that code. 
 
 4.  What is JSX?
+  - JSX is a mixture of Javascript and XML, JSX uses an almost identical tag structure to html but allows us the possibility to insert javascript within those tags. 
 
 5.  What is the virtual DOM?
+  - A lightweight version of the actual DOM which acts as an intermediary between our react components and our actual DOM. The virtual DOM will recognize data changes made to elements in JSX and will only update the actual DOM when needed. This increases performance of our applications to prevent unnecessary rendering of unchanged elements. 
 
 6.  What is unidirectional (one-way) data flow?
+  - Unidirectional data flow is a form of data management in which data is stored in it's top most parent component and that data and methods to change that data are only passed downwards to children components as props. Children are able to use the data passed down, as well as the methods to change that data because the context of our methods was bound to the parent component object and it's state. 
 
 ### Understand
 

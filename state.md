@@ -3,10 +3,13 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is state?
+  - State is an immutable object on class components where we can store various data for our application into key/value pairs. 
 
 2.  Where do you set initial state?
+  - State is initialized in the constructor of a class component.
 
 3.  What method do you use to update state?
+  - this.setState({stateKeyName: someNewValue})
 
 ### Understand
 

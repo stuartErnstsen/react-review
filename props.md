@@ -3,14 +3,39 @@
 Answer these on your own, then compare answers as a group
 
 1.  What are props?
+  - Props is an object of key/value data pairs accessible to a child component of another parent component. The props object with those key/value pairs is passed down by the parent 
 
 2.  How do you pass props from a parent to a child?
+  - In our return/render on our parent component, we attach a key/value pair within a specific JSX tag: "<Child myValue={this.state.myvalue} />"
 
 3.  How do you access props from a class-based child component?
+  - Within the child class component we accept props into our constructor as and argument, then we invoke the super method passing in props "super(props);" within our constructor. This will ensure that this.props is available to our entire component as well as our constructor!
+    ```
+    class MyComp extends Component {
+      constructor(props){
+        super(props)
+      }
+      render(){
+        return (
+          <h1>{this.props.title}</h1>
+        )
+      }
+    }
+    ```
 
 4.  How do you access props from a functional component?
+  - Within the functional component declaration we accept props in as an argument, after that, the props object is now available to use in the component with "props.myPropName" 
+    ```
+    function MyComp(props){
+      return (
+          <h1>{props.title}</h1>
+      )
+    }
+    ```
 
 5.  How do you bind a function to a parent component so that it can be passed to a child?
+ - this.function = this.function.bind(this) inside the constructor for a class component.
+ 
 
 ### Understand
 
